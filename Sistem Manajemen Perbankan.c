@@ -20,7 +20,7 @@ void createAccount(struct Account accounts[], int *numAccounts) {
     printf("Account created successfully. Account number: %d\n", accounts[*numAccounts - 1].accNumber);
 }
 
-// Setoran tabungan
+// Setoran dana ke rekening
 void deposit(struct Account accounts[], int numAccounts) {
     int accNumber;
     float amount;
@@ -62,7 +62,7 @@ void withdraw(struct Account accounts[], int numAccounts) {
     }
 }
 
-// Pengecekan mutasi rekening Current Balance
+// Pengecekan mutasi rekening Current & Existing Balance
 void checkBalance(struct Account accounts[], int numAccounts) {
     int accNumber;
 
@@ -84,7 +84,7 @@ int main() {
 
     while (1) {
         printf("\n Bank Github Indonesia"\n);
-        printf("\nBank Management System\n");
+        printf("\nSistem Manajemen Perbankan\n");
         printf("1. Create Account\n");
         printf("2. Deposit\n");
         printf("3. Withdraw\n");
